@@ -1,4 +1,3 @@
-
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
@@ -48,4 +47,6 @@
     kscan = <&kscan0>;
     transform = <&default_transform>;
 };
-
+&xiao_serial { 
+    status = "disabled"; 
+};
