@@ -1,0 +1,7 @@
+
+if SHIELD_1759471827649
+
+config ZMK_KEYBOARD_NAME
+    default "1759471827649"
+
+endif
