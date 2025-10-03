@@ -2,4 +2,28 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#include "../../../config/keymap.keymap"
+  / {
+      keymap {
+          compatible = "zmk,keymap";
+
+          layer_0 {
+              bindings = <
+                  &kp NLCK      &kp KDIV      &kp KMUL        &kp BSPC
+                  &kp KP_N7     &kp KP_N8     &kp KP_N9       &kp KMIN
+                  &kp KP_N4     &kp KP_N5     &kp KP_N6       &kp KPLS
+                  &kp KP_N1     &kp KP_N2     &kp KP_N3       &kp KENT
+                  &kp KP_N0     &kp KDOT      &none           &none
+              >;
+          };
+
+          layer_1 {
+              bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>;
+          };
+          layer_2 {
+              bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>;
+          };
+          layer_3 {
+              bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>;
+          };
+      };
+  };
